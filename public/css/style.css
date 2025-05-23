@@ -1,0 +1,113 @@
+/* Fondo de pantalla completo */
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url('https://remingtonedu-my.sharepoint.com/:i:/r/personal/yoiser_agualimpia_4935_miremington_edu_co/Documents/CUR/SEPTIMO%20SEMESTRE/ARQUITECTURA%20DE%20SOFTWARE/PROYECTO/greenD.png?csf=1&web=1&e=pim1nh'); /* Ruta de la imagen de fondo */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Logo fijo en la esquina superior izquierda */
+#logo {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    width: 120px; /* Ajusta tamaño del logo */
+    z-index: 1000;
+}
+
+#logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Ajustes para el título y botones, para que se vean bien sobre el fondo */
+#title {
+    text-align: center;
+    margin-top: 30px;
+    font-size: 3rem;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+}
+
+#menu {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    gap: 15px;
+}
+
+.btn {
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    background-color: rgba(0, 123, 255, 0.8);
+    color: white;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: rgba(0, 123, 255, 1);
+}
+
+/* Canvas centrado */
+#gameCanvas {
+    display: block;
+    margin: 0 auto 30px auto;
+    border: 2px solid white;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+/* Estilos para la tabla de Puntajes Globales */
+
+table {
+    width: 80%;
+    max-width: 700px;
+    margin: 40px auto;
+    border-collapse: collapse;
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo semitransparente oscuro */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+    overflow: hidden;
+    color: white;
+    font-size: 1rem;
+    font-family: Arial, sans-serif;
+}
+
+thead tr {
+    background-color: rgba(103, 117, 130, 0.8);
+    text-align: left;
+}
+
+thead th, tbody td {
+    padding: 12px 20px;
+}
+
+tbody tr {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    transition: background-color 0.3s ease;
+}
+
+tbody tr:hover {
+    background-color: rgba(0, 123, 255, 0.3);
+}
+
+tbody tr:last-child {
+    border-bottom: none;
+}
+
+h1 {
+    text-align: center;
+    color: #ccc; /* Gris claro, ajusta si quieres otro tono */
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7); /* Para darle un poco de profundidad */
+    margin-top: 30px;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
